@@ -71,7 +71,7 @@ public class Ship : MonoBehaviour
             // Apply a force in the direction of thrustDirection, scaled by ThrustForce.
             rb2D.AddForce(thrustDirection.normalized * ThrustForce * speedMultiplier, ForceMode2D.Force);
             //rb2D.AddForce(transform.forward * ThrustForce * speedMultiplier, ForceMode2D.Force);
-            UnityEngine.Debug.LogError(thrustDirection.normalized);
+            //UnityEngine.Debug.LogError(thrustDirection.normalized);
         }
     }
 
