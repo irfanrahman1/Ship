@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Vector2 = UnityEngine.Vector2;
-//using System.Diagnostics;
+//using System.Diagnostics; 
 using UnityEngine;
 using System;
 
@@ -46,7 +46,7 @@ public class Ship : MonoBehaviour
     //// Update is called once per frame
     //void Update()
     //{
-
+    // no needed update
     //}
 
     void FixedUpdate()
@@ -93,7 +93,7 @@ public class Ship : MonoBehaviour
             newPosition.x = ScreenUtils.ScreenRight + colliderRadius;
         }
 
-        //// Vertical Wrapping (if applicable)
+        //// Vertical Wrapping (Optional)
         //if (newPosition.y > 0)
         //{
         //    newPosition.y = ScreenUtils.ScreenBottom - colliderRadius;
