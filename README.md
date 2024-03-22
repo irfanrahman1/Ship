@@ -16,7 +16,7 @@ git clone [repository-url]
 
 Alternatively, download the project as a ZIP file and extract it.
 
-2. **Open the project in Unity Hub:** Launch Unity Hub, go to the 'Projects' tab, and click on 'ADD'. Navigate to the project folder and select it. Unity will then import the project and its assets.
+2. **Open the project in Unity Hub:** Launch Unity Hub, go to the "Projects" tab, and click on "ADD". Navigate to the project folder and select it. Unity will then import the project and its assets.
 
 3. **Open the project in the Unity Editor:** Once the project appears in your Unity Hub projects list, click on it to open the project in the Unity Editor.
 
