@@ -3,8 +3,8 @@ using System.Collections.Generic;
 //using System.Numerics;
 using Vector2 = UnityEngine.Vector2;
 //using System.Diagnostics;
-//using System.Numerics;
 using UnityEngine;
+using System;
 
 public class Ship : MonoBehaviour
 {
@@ -16,8 +16,14 @@ public class Ship : MonoBehaviour
     // Declare and initialize the thrustDirection field
     private Vector2 thrustDirection = new Vector2(1, 0);
 
-        // Define the thrust force as a constant
+    // Define the thrust force as a constant
     private const float ThrustForce = 5.0f;
+
+    // Declare a constant for rotation speed in degrees per second
+    private const float ROTATE_DEGREES_PER_SECOND = 90.0f; // Example value
+
+    public float speedMultiplier = 1.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,7 +47,19 @@ public class Ship : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // Get rotation input from the "Rotate" axis
+        float rotationInput = Input.GetAxis("Rotate");
+
+        // Calculate rotation amount based on input and rotation speed
+        float rotationAmount = ROTATE_DEGREES_PER_SECOND * Time.deltaTime * rotationInput;
+
+        // Apply rotation around the Z-axis (forward axis for 2D)
+        transform.Rotate(Vector3.forward, rotationAmount);
+
+        // Calculate the new thrust direction
+        float angleInRadians = transform.eulerAngles.z * Mathf.Deg2Rad; // Convert Z rotation to radians
+        thrustDirection.x = Mathf.Cos(angleInRadians); // X component of the new direction
+        thrustDirection.y = Mathf.Sin(angleInRadians); // Y component of the new direction
     }
 
     void FixedUpdate()
@@ -50,7 +68,7 @@ public class Ship : MonoBehaviour
         if (Input.GetButton("Thrust"))
         {
             // Apply a force in the direction of thrustDirection, scaled by ThrustForce.
-            rb2D.AddForce(thrustDirection * ThrustForce, ForceMode2D.Force);
+            rb2D.AddForce(thrustDirection.normalized * ThrustForce * speedMultiplier, ForceMode2D.Force);
         }
     }
 
