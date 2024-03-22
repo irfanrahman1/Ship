@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-//using System.Numerics;
 using Vector2 = UnityEngine.Vector2;
 //using System.Diagnostics;
 using UnityEngine;
@@ -44,8 +43,13 @@ public class Ship : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
+    //// Update is called once per frame
+    //void Update()
+    //{
+
+    //}
+
+    void FixedUpdate()
     {
         // Get rotation input from the "Rotate" axis
         float rotationInput = Input.GetAxis("Rotate");
@@ -60,15 +64,14 @@ public class Ship : MonoBehaviour
         float angleInRadians = transform.eulerAngles.z * Mathf.Deg2Rad; // Convert Z rotation to radians
         thrustDirection.x = Mathf.Cos(angleInRadians); // X component of the new direction
         thrustDirection.y = Mathf.Sin(angleInRadians); // Y component of the new direction
-    }
 
-    void FixedUpdate()
-    {
         // Check if the Thrust input is being pressed.
         if (Input.GetButton("Thrust"))
         {
             // Apply a force in the direction of thrustDirection, scaled by ThrustForce.
             rb2D.AddForce(thrustDirection.normalized * ThrustForce * speedMultiplier, ForceMode2D.Force);
+            //rb2D.AddForce(transform.forward * ThrustForce * speedMultiplier, ForceMode2D.Force);
+            UnityEngine.Debug.LogError(thrustDirection.normalized);
         }
     }
 
