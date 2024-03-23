@@ -1,13 +1,13 @@
 # Ship
 
 ## Overview
-This project is a simple 2D Unity game called "Ship," where the player controls a ship that can move forward, rotate, and wrap around the screen edges. This project serves as an introduction to Unity game development, covering basic concepts such as scene setup, sprite management, input handling, physics, and scripting.
+This project is a simple 2D Unity game called "Ship" where the player controls a ship that can move forward, rotate, and wrap around the screen edges. This project serves as an introduction to Unity game development, covering basic concepts such as scene setup, sprite management, input handling, physics, and scripting.
 
 ## Getting Started
 
 ### Prerequisites
 - Unity Hub
-- Unity Editor (version [specify version here], though later versions may also work)
+- Unity Editor
 - Visual Studio or another compatible IDE for editing C# scripts
 
 ### Installation
@@ -16,12 +16,12 @@ git clone [repository-url]
 
 Alternatively, download the project as a ZIP file and extract it.
 
-2. **Open the project in Unity Hub:** Launch Unity Hub, go to the 'Projects' tab, and click on 'ADD'. Navigate to the project folder and select it. Unity will then import the project and its assets.
+2. **Open the project in Unity Hub:** Launch Unity Hub, go to the "Projects" tab, and click on "ADD". Navigate to the project folder and select it. Unity will then import the project and its assets.
 
 3. **Open the project in the Unity Editor:** Once the project appears in your Unity Hub projects list, click on it to open the project in the Unity Editor.
 
 ### Running the Game
-- In the Unity Editor, navigate to the `Scene0` in the `Scenes` folder.
+- In the Unity Editor, navigate to the "Scene0" in the "Scenes" folder.
 - Press the play button on the top center of the Unity Editor to run the game.
 - Control the ship using the spacebar to move forward and the left/right arrow keys to rotate.
 
@@ -29,7 +29,7 @@ Alternatively, download the project as a ZIP file and extract it.
 - **Assets**: Contains all the project assets, including sprites, scripts, and scenes.
 - **Sprites**: Folder for graphical assets.
 - **Scripts**: Contains C# scripts for game functionality.
-- **Scenes**: Where the game scenes are stored, including the main game scene (`Scene0`).
+- **Scenes**: Where the game scenes are stored, including the main game scene ("Scene0").
 - **ProjectSettings**: Unity-generated project settings files.
 
 ## Features
