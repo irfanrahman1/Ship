@@ -1,7 +1,7 @@
 # Ship
 
 ## Overview
-This project is a simple 2D Unity game called "Ship" where the player controls a ship that can move forward, rotate, and wrap around the screen edges. This project serves as an introduction to Unity game development, covering basic concepts such as scene setup, sprite management, input handling, physics, and scripting.
+This project is a simple 2D Unity game called "Ship," where the player controls a ship that can move forward, rotate, and wrap around the screen edges. This project serves as an introduction to Unity game development, covering basic concepts such as scene setup, sprite management, input handling, physics, and scripting.
 
 ## Getting Started
 
@@ -38,10 +38,10 @@ Alternatively, download the project as a ZIP file and extract it.
 - **Custom Physics**: Adjusted gravity and physics settings for a 2D space environment.
 
 ## Contributing
-We welcome contributions and suggestions! Please open an issue or submit a pull request for any bugs, feature suggestions, or improvements.
+I'm always looking to improve and expand this project, and your input is invaluable! If you've discovered a bug, have a feature suggestion, or any kind of improvement in mind, please feel free to share your thoughts. You can open an issue or, if you're inclined, submit a pull request with your proposed changes. Collaboration and feedback are greatly appreciated, as they help make this project even better. Thank you for your support and interest! 
 
 ## Demo Video
-Check out the gameplay demo to see Space Navigator in action. https://youtu.be/W0vzAL7-vWg
+Check out the gameplay demo to see Ship in action. https://youtu.be/W0vzAL7-vWg
 
 ## Acknowledgments
 - Unity Technologies for providing the Unity Engine and its documentation.
